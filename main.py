@@ -638,7 +638,7 @@ def open_xmlgen():
         if chan_chosenXML.get() == 'Sample_Panama':
             try:
                 panama_xmls(pitch)
-                dtd_creator()
+                #dtd_creator()
             except IndexError as issue:
                 error_popup()
     
