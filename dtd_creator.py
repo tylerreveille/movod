@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 Created on Thu May 14 11:09:09 2020
 
@@ -8,7 +9,7 @@ Created on Thu May 14 11:09:09 2020
 import os
 
 
-def dtd_creator():
+def dtd_creator(dirvar):
     text = '''<!-- DTD for Package-->
 <!--CableLabs Asset Distribution Interface version 1.1 -->
 <!-- <!ENTITY amp "&#38;#38;"> -->
@@ -38,11 +39,11 @@ Value CDATA #REQUIRED
 >
     '''
 
-    with open('C:\\Users\\Papi\\Desktop\\MOVOD\\files\\ADI.txt', 'w') as file:
+    with open(str(dirvar) + '\\' + 'ADI.txt', 'w') as file:
         file.write(text)
         
-    os.rename('C:\\Users\\Papi\\Desktop\\MOVOD\\files\\ADI.txt',
-              'C:\\Users\\Papi\\Desktop\\MOVOD\\files\\ADI.dtd')
+    os.rename(str(dirvar) + '\\' + 'ADI.txt',
+              str(dirvar) + '\\' + 'ADI.dtd')
     print('adi created')
 
 
