@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 import sqlite3
 import re
 from tkinter import filedialog
+from dtd_creator import dtd_creator
 
 def panama_xmls(schedule):
     ''' Connect to the database and query it '''
@@ -324,6 +325,6 @@ def panama_xmls(schedule):
     
     conn.commit()
     conn.close()
-    
+    dtd_creator(dirvar)
     
 #panama_xmls('Sample_Panama_January_2020')
