@@ -239,7 +239,7 @@ def panama_xmls(schedule):
         ET.SubElement(metadata1, 'AMS', Provider="REVVOD", Product="MOD",
                       Asset_Name=str(asset_name_var + "_HD_Package"),
                       Version_Major="1", Version_Minor="0",  Description= str(asset_name_var + ' HD'),
-                      Creation_Date=str(today), Provider_ID="REV.com", 
+                      Creation_Date=str(today), Provider_ID="tylerreveille.com", 
                       Asset_ID=str("REV0520046500" + asset_list[j]), Asset_Class="package")
         ET.SubElement(metadata1, 'App_Data', Name="Metadata_Spec_Version", App="MOD", Value="CableLabsVOD1.1")
         Asset = ET.SubElement(ADIdoc, 'Asset')
