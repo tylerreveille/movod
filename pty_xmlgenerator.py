@@ -267,7 +267,7 @@ def panama_xmls(schedule):
         ET.SubElement(metadata2, 'App_Data', App="MOD", Name="Director", Value= director)
         ET.SubElement(metadata2, 'App_Data', App="MOD", Name="Category", Value= categories[0])
         ET.SubElement(metadata2, 'App_Data', App="MOD", Name="Category", Value= categories[1])
-        ET.SubElement(metadata2, 'App_Data', App="MOD", Name="Genre", Value="Adulto")
+        ET.SubElement(metadata2, 'App_Data', App="MOD", Name="Genre", Value="WHATEVER")
         ET.SubElement(metadata2, 'App_Data', App="MOD", Name="Box_Office", Value="0")
         ET.SubElement(metadata2, 'App_Data', App="MOD", Name="Billing_ID", Value="0")
         ET.SubElement(metadata2, 'App_Data', App="MOD", Name="Licesning_Window_Start",
@@ -296,7 +296,7 @@ def panama_xmls(schedule):
         ET.SubElement(metadata3, 'App_Data', App="MOD", Name="Content_Format", Value="MPEG2")
         ET.SubElement(metadata3, 'App_Data', App="MOD", Name="Content_FileSize", Value="")
         ET.SubElement(metadata3, 'App_Data', App="MOD", Name="Content_CheckSum", Value="")
-        ET.SubElement(Asset2, 'Content', Value=str("HUTL0520046500" + asset_list[j] + ".ts"))
+        ET.SubElement(Asset2, 'Content', Value=str("HREV0520046500" + asset_list[j] + ".ts"))
         Asset3 = ET.SubElement(Asset, 'Asset')
         metadata4 = ET.SubElement(Asset3, 'Metadata')
         ET.SubElement(metadata4, 'AMS', Provider="REVVOD", Product="MOD", Asset_Name=str(asset_name_var + "_HD_Poster"),
@@ -307,7 +307,7 @@ def panama_xmls(schedule):
         ET.SubElement(metadata4, 'App_Data', App="MOD", Name="Image_Aspect_Ratio", Value="640x960")
         ET.SubElement(metadata4, 'App_Data', App="MOD", Name="Content_FileSize", Value="")
         ET.SubElement(metadata4, 'App_Data', App="MOD", Name="Content_CheckSum", Value="")
-        ET.SubElement(Asset3, 'Content', Value=str("HUTL05200465" + asset_list[j]  + ".jpg"))
+        ET.SubElement(Asset3, 'Content', Value=str("HREV05200465" + asset_list[j]  + ".jpg"))
         ## final steps: call prettify to make it look good and export the ADI element
         prettify(ADIdoc)
         tree = ET.ElementTree(ADIdoc)
